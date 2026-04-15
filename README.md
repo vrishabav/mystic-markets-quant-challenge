@@ -21,14 +21,12 @@ The strategy was developed for a trading simulation challenge involving 6 distin
 
 ## Repository Structure
 
-- `docs/`: Core strategy writeup and problem formulation.
-  - `strategy_writeup.md`: Detailed breakdown of the statistical analysis, mathematical modeling, and iterative improvements that led to the final logic.
+- `strategy_writeup.md`: Detailed breakdown of the statistical analysis, mathematical modeling, and iterative improvements that led to the final logic.
 - `src/`: 
   - `strategy_final.py`: The final executed Python trading algorithm.
   - `backtester/`: The local simulation and execution engine (`runner.py`, `backtester.py`) to evaluate the strategy isolated per asset.
-- `data/`: 
-  - `dataset.csv`: The underlying price and volume market data.
-- `experiments/`: Select intermediate iterations showcasing the progression from basic moving average crossovers to complex Volume-Weighted-Momentum integration.
+  - `experiments/`: Select intermediate iterations showcasing the progression from basic moving average crossovers to complex Volume-Weighted-Momentum integration.
+- `dataset.csv`: The underlying price and volume market data.
 
 ## Usage
 
@@ -36,7 +34,7 @@ Create a virtual environment and install the required dependencies (numpy, panda
 
 Run the backtester against the main strategy file:
 ```bash
-python src/backtester/runner.py data/dataset.csv src/strategy_final.py
+python src/backtester/runner.py dataset.csv src/strategy_final.py
 ```
 
 ## Strategy Highlights
